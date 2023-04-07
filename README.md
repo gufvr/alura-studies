@@ -21,18 +21,16 @@ Esse projeto foi desenvolvido com as seguintes tecnologias:
 - [React](https://react.dev/)
 - [TypeScript](https://www.typescriptlang.org/)
 - [Node e NPM](https://nodejs.org/)
-- [Sass(https://www.npmjs.com/package/sass)
+- [Sass](https://www.npmjs.com/package/sass)
 
-![tecnologias](https://user-images.githubusercontent.com/107816413/229405964-43139e10-97f1-4d78-a1f1-64a795442a33.jpg)
+![tecnologias](https://user-images.githubusercontent.com/107816413/230673400-ff1338ba-9b91-4f4f-91b4-ddb0f32580b0.jpg)
 
 
 ## 💻 Projeto
 
-O Alura Studies é um App que utiliza a que consiste na utilização de um cronômetro para sua lista de afazeres, com o objetivo de melhorar sua produtividade e foco. Desenvolvido durante o curso <strong>React: escrevendo com Typescript</strong> da <strong>Alura</strong>.
+O Alura Studies é um App que que consiste na utilização de um cronômetro para sua lista de afazeres, com o objetivo de melhorar sua produtividade e foco. Desenvolvido durante o curso <strong>React: escrevendo com Typescript</strong> da <strong>[Alura](https://www.alura.com.br/)</strong>.
 
-![newChallenge](https://user-images.githubusercontent.com/107816413/229386110-e470354f-29c8-417a-b7b9-f73d43164467.jpg)
-
-![page](https://user-images.githubusercontent.com/107816413/229386184-e6e63cb9-81cd-42fd-9631-e2883ca8291e.jpg)
+![Page](https://user-images.githubusercontent.com/107816413/230673654-264715cd-3e6f-49eb-95a5-e8e1bc282893.jpg)
 
 ## :memo: Licença
 
