@@ -11,6 +11,10 @@ function App() {
 
   function selectTask(selectedTask: ITask) {
     setSelected(selectedTask);
+    setTasks(previousTasks => previousTasks.map(task => ({
+      ...task,
+      selected: task.id === selectedTask.id ? true : false
+    })));
   }
 
   return (

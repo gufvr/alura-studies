@@ -18,16 +18,16 @@ export default function Item(
   console.log('item atual: ', { task, time, selected, completed, id });
   return (
     <li 
-      className={style.item} 
+      className={`${style.item} ${selected ? style.selectedItem : ''}`} 
       onClick={() => selectTask(
         {
-          task,
-          time,
-          selected,
-          completed,
-          id
+        task,
+        time,
+        selected,
+        completed,
+        id
         }
-      )}
+        )}
     >
       <h3>{task}</h3>
       <span>{time}</span>
