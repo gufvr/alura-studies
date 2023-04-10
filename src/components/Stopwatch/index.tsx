@@ -1,33 +1,39 @@
-import Button from "../Button"
-import Clock from "./Clock"
-import style from "./Stopwatch.module.scss"
-import { timeToSeconds } from "../../common/utils/time"
-import ITask from "../../types/task"
-import { useEffect, useState } from "react"
+import Button from "../Button";
+import Clock from "./Clock";
+import style from "./Stopwatch.module.scss";
+import { timeToSeconds } from "../../common/utils/time";
+import ITask from "../../types/task";
+import { useEffect, useState } from "react";
 
 interface Props {
-  selected: ITask | undefined
+  selected: ITask | undefined;
 }
 
-export default function Stopwatch({ selected }: 
-Props) {
+export default function Stopwatch({ selected }: Props) {
   const [time, setTime] = useState<number>();
 
   useEffect(() => {
-    if(selected?.time) {
-      setTime(timeToSeconds(selected.time))
+    if (selected?.time) {
+      setTime(timeToSeconds(selected.time));
     }
-  }, [selected])
-  
+  }, [selected]);
+
+  function regressive(counter: number = 0) {
+    setTimeout(() => {
+      if (counter > 0) {
+        setTime(counter - 1);
+        return regressive(counter - 1); 
+      }
+    }, 1000);
+  }
+
   return (
     <div className={style.stopwatch}>
       <p className={style.title}>Escolha um card e inicie o cronômetro</p>
       <div className={style.clockWrapper}>
         <Clock time={time} />
       </div>
-      <Button>
-        Começar!
-      </Button>
+      <Button onClick={() => regressive(time)}>Começar!</Button>
     </div>
-  )
+  );
 }
