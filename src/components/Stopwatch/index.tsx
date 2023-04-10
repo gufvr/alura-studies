@@ -22,9 +22,8 @@ Props) {
   return (
     <div className={style.stopwatch}>
       <p className={style.title}>Escolha um card e inicie o cronômetro</p>
-      Tempo: {time}
       <div className={style.clockWrapper}>
-        <Clock />
+        <Clock time={time} />
       </div>
       <Button>
         Começar!
